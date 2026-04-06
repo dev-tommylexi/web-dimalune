@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Dimalune - Sitio Web </title>
+  <meta name="description" content="Pastelería artesanal" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#inicio" class="logo">
+      <img src="logo.jpg" alt="Logo Dimalune" class="logo-img">
+      <div class="logo-text">
+        <strong>Dimalune</strong>
+      </div>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#pedidos">Pedidos</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto" class="nav-cta">Hacé tu pedido</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy hero-card">
+          <span class="eyebrow"> Pastelería artesanal </span>
+          <h1>Dimalune </h1>
+          <p>
+            Tortas, cookies, box desayuno y pedidos personalizados.
+            Creamos propuestas dulces para cumpleaños, regalos, meriendas y eventos.
+            Retirá por el local o programá tu envío.
+          </p>
+
+          <div class="btn-group">
+            <a class="btn btn-primary" href="https://wa.me/5491164919221?text=Hola!%20Quiero%20hacer%20un%20pedido%20en%20belen.past" target="_blank" rel="noopener noreferrer">Pedir por WhatsApp</a>
+            <a class="btn btn-secondary" href="#productos">Ver productos</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card">
+              <strong>1500+</strong>
+              <span>Seguidores</span>
+            </div>
+            <div class="stat-card">
+              <strong>600+</strong>
+              <span>Publicaciones</span>
+            </div>
+            <div class="stat-card">
+              <strong>8+</strong>
+              <span>Años de Exp.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image" aria-label="Foto destacada de productos de pastelería">
+          <div class="floating-note">
+            <strong>Pedidos personalizados</strong>
+            <p>Consultá por tortas temáticas, mesas dulces y opciones para regalar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nosotros">
+      <div class="container about-grid">
+        <div class="section-header">
+          <span class="eyebrow">Sobre mí</span>
+          <h2>Sobre mí</h2>
+          <p>
+            Soy Belén López. Pastelera profesional, egresada del instituto CECARP, con más de 8 años de profesión.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 12px;">Qué se puede destacar acá</h3>
+          <div class="features">
+            <div class="feature">Tortas personalizadas</div>
+            <div class="feature">Productos artesanales</div>
+            <div class="feature">Atención por WhatsApp</div>
+            <div class="feature">Opciones para eventos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="productos">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Productos destacados</span>
+          <h2>Un catálogo simple, visual y fácil de recorrer.</h2>
+          <p>
+            Podés reemplazar estas categorías por las reales de la pastelería. La idea es que cada bloque lleve a una consulta rápida.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80" alt="Torta decorada" />
+            <div class="product-content">
+              <div class="product-meta">Personalizadas</div>
+              <h3>Tortas temáticas</h3>
+              <p>Diseños para cumpleaños, celebraciones especiales y eventos.</p>
+              <div class="btn-group">
+                <a class="btn btn-secondary product-btn" data-product="tortas temáticas" href="#">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=80" alt="Cookies y dulces" />
+            <div class="product-content">
+              <div class="product-meta">Meriendas</div>
+              <h3>Cookies y dulces</h3>
+              <p>Opciones ideales para regalar, compartir o sumar a una mesa dulce.</p>
+              <div class="btn-group">
+                <a class="btn btn-secondary product-btn" data-product="cookies y dulces" href="#">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=900&q=80" alt="Box desayuno" />
+            <div class="product-content">
+              <div class="product-meta">Regalos</div>
+              <h3>Box desayuno</h3>
+              <p>Presentaciones lindas y prácticas para fechas especiales.</p>
+              <div class="btn-group">
+                <a class="btn btn-secondary product-btn" data-product="box desayuno" href="#">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=80" alt="Budines artesanales" />
+            <div class="product-content">
+              <div class="product-meta">Clásicos</div>
+              <h3>Budines y pastelería</h3>
+              <p>Sabores caseros y presentaciones simples para todos los días.</p>
+              <div class="btn-group">
+                <a class="btn btn-secondary product-btn" data-product="budines y pastelería" href="#">Consultar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Galería</span>
+          <h2>Mirá algunos de nuestros productos</h2>
+          <p>
+            Podés consultar por diseños similares o personalizados. Tenemos variedad de opciones, estilos de presentación y tipos de productos.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="data/producto_cupcakes_1.webp" alt="Cupcakes artesanales" />
+            <div class="gallery-overlay">
+              <p>Cupcakes artesanales decorados, ideales para mesas dulces y eventos.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="data/producto_minipasteleria_v2.webp" alt="Mini pastelería" />
+            <div class="gallery-overlay">
+              <p>Mini pastelería variada, perfecta para celebraciones y catering dulce.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="data/producto_minipasteleria.webp" alt="Mini pastelería artesanal" />
+            <div class="gallery-overlay">
+              <p>Selección de mini pastelería artesanal con presentación delicada.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="data/producto_desayuno_1.webp" alt="Desayuno dulce" />
+            <div class="gallery-overlay">
+              <p>Box o desayuno dulce para regalar o sorprender en una ocasión especial.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="data/producto_tarta_brownie.webp" alt="Tarta brownie" />
+            <div class="gallery-overlay">
+              <p>Tarta brownie intensa y tentadora, ideal para amantes del chocolate.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="data/producto_tarta_milhojas.webp" alt="Tarta milhojas" />
+            <div class="gallery-overlay">
+              <p>Tarta milhojas de textura delicada, elegante para compartir o regalar.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="data/producto_lunchbox_torta_1.webp" alt="Lunchbox torta" />
+            <div class="gallery-overlay">
+              <p>Lunchbox torta en formato pequeño, práctica, linda y personalizable.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="data/producto_tarta_rogel.webp" alt="Tarta rogel" />
+            <div class="gallery-overlay">
+              <p>Tarta rogel clásica con capas delicadas y un perfil bien artesanal.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="data/producto_tarta_tiramisu.webp" alt="Tarta tiramisú" />
+            <div class="gallery-overlay">
+              <p>Tarta tiramisú con una impronta suave y sofisticada para ocasiones especiales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="pedidos">
+      <div class="container order-grid">
+        <div>
+          <div class="section-header">
+            <span class="eyebrow">Cómo hacer pedidos</span>
+            <h2>Instrucciones paso a paso</h2>
+          </div>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div>
+                <h3>Elegí tu producto</h3>
+                <p>Podés inspirarte en el catálogo o consultar por una opción personalizada.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div>
+                <h3>Escribí por WhatsApp</h3>
+                <p>Contanos qué querés, para qué fecha lo necesitás y cualquier detalle importante.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div>
+                <h3>Coordiná retiro por local o entrega a domicilio</h3>
+                <p>Se confirma disponibilidad, forma de entrega y modalidad de reserva.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 12px;">Información útil</h3>
+          <p>
+            Para tortas se necesita 1 semana de anticipación, sujeto a disponibilidad.
+          </p>
+          <p>
+            Para tartas o mesas dulces se recomienda pedir con al menos 3 días de anticipación. 
+          </p>
+
+          <p style="margin-bottom: 12px;">
+            Se cobra un recargo del 15% para pedidos express (dentro de las 48hs).  
+          </p>
+          <div class="features">
+            <div class="feature">Reservas por WhatsApp</div>
+            <div class="feature">Atención personalizada</div>
+            <div class="feature">Consultar disponibilidad</div>
+            <div class="feature">Retiro o entrega</div>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="https://wa.me/5491164919221?text=Hola!%20Quiero%20consultar%20por%20un%20pedido" target="_blank" rel="noopener noreferrer">Consultar ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resenas">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Reseñas</span>
+          <h2>Testimonios de nuestros clientes</h2>
+          <p>
+            Algunos de nuestros clientes comparten su experiencia con nosotros.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review">
+            <strong>“Hermosa presentación y todo riquísimo.”</strong>
+            <p>[Podés usar acá comentarios reales de clientas que dejaron en ig o reseñas de Google Maps.]</p>
+          </article>
+          <article class="review">
+            <strong>“La torta quedó preciosa y llegó perfecta.”</strong>
+            <p>[más descripción]</p>
+          </article>
+          <article class="review">
+            <strong>“Respondieron rápido y me ayudaron a elegir.”</strong>
+            <p>[más]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-header">
+            <span class="eyebrow">Contacto</span>
+            <h2>Encontranos en</h2>
+          </div>
+
+          <div class="contact-list">
+            <div class="contact-card">
+              <h3>WhatsApp</h3>
+              <p><a href="https://wa.me/5491164919221" target="_blank" rel="noopener noreferrer">+54 9 11 6491-9221</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>Instagram</h3>
+              <p><a href="https://instagram.com/belen.past" target="_blank" rel="noopener noreferrer">@belen.past</a></p>
+            </div>
+            <div class="contact-card">
+              <h3>Ubicación</h3>
+              <p>Mariano Acosta, Buenos Aires</p>
+              <p>Acá podés incrustar un mapa o sumar zona de entrega.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form card">
+          <h3 style="margin-bottom: 19px;">Hacé tu pedido y te contactamos</h3>
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+              </div>
+
+              <div class="field">
+                <label for="phone">WhatsApp</label>
+                <input id="phone" name="phone" type="text" placeholder="Tu número" required />
+              </div>
+
+              <div class="field full">
+                <label for="product">Producto de interés</label>
+                <select id="product" name="product">
+                  <option value="Consulta general" data-type="otro">Consulta general</option>
+                  <option value="Tortas temáticas" data-type="torta">Tortas temáticas</option>
+                  <option value="Cookies y dulces" data-type="otro">Cookies y dulces</option>
+                  <option value="Box desayuno" data-type="otro">Box desayuno</option>
+                  <option value="Budines y pastelería" data-type="otro">Budines y pastelería</option>
+                </select>
+              </div>
+
+              <div class="field full hidden" id="relleno-group">
+              <label for="relleno">Tipo de relleno</label>
+              <select id="relleno" name="relleno">
+                <option value="">Elegí un relleno</option>
+                <option value="Dulce de leche">Dulce de leche</option>
+                <option value="Ganache de chocolate">Ganache de chocolate</option>
+                <option value="Frutilla">Frutilla</option>
+                <option value="Oreo">Oreo</option>
+                <option value="Chantilly">Chantilly</option>
+              </select>
+            </div>
+
+              <div class="field full">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Contanos qué querés pedir, para qué fecha y cualquier detalle importante"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+            <p class="form-note">Este formulario no guarda datos: redirige directamente a WhatsApp.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <p>© 2026 Dimalune</p>
+      <p></p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491164919221" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="whatsapp-icon">
+  </a>
+</body>
+</html>
